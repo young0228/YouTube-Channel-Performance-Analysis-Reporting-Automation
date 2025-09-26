@@ -1,25 +1,42 @@
 # YouTube Channel Performance Analysis & Reporting Automation
 
-A Python script designed to automate the process of analyzing YouTube video performance. It generates anonymized data, automatically categorizes videos, calculates key performance metrics, and exports the results into a new Google Sheet for easy reporting and visualization.
+[한국어 버전 (Korean Version)](README_KO.md)
 
-This project demonstrates skills in data manipulation, text processing, automation, and cloud platform integration.
+### From Data Cleaning to Business Intelligence: A YouTube Channel Growth Strategy
+
+This project began as a simple request for data cleaning but evolved into a full data consulting initiative. I designed and built a system that transforms scattered YouTube data into a powerful BI dashboard, laying the groundwork for a data-driven channel growth strategy.
 
 ---
 
 ### 📊 Final Dashboard
 
-The data processed by this script is used to power an interactive dashboard in Looker Studio, allowing for easy monitoring of content performance.
-<img width="1066" height="798" alt="{59CE9A1D-9712-4910-9A26-44E8718D7788}" src="https://github.com/user-attachments/assets/5ba16b47-f6fa-49cb-a527-466c76cc4ce0" />
+The processed data powers an interactive 2-page Looker Studio dashboard, featuring a KPI summary and a deep-dive page for individual video analysis.
+<img width="1061" height="805" alt="{7A91AF1C-32EF-4CB1-8262-6E1CC1128C08}" src="https://github.com/user-attachments/assets/d9d1bb3f-dc9a-45d5-b186-1aa684693472" />
 
 
 ---
 
-### ✨ Key Features
+### 🎯 Project Goal
 
--   **Dummy Data Generation**: Creates realistic, portfolio-safe data that mimics real-world YouTube metrics, ensuring client confidentiality.
--   **Text-Based Categorization**: Automatically classifies videos into predefined categories using keyword matching (`regex`) in video titles.
--   **Data Aggregation**: Utilizes `pandas` to efficiently calculate key metrics per category, such as total views, total watch time, and average click-through rate.
--   **Cloud Integration & Automation**: Securely authenticates with the Google Cloud Platform and automates the creation of a new Google Sheet, delivering a ready-to-use report.
+The primary goal was to systematically categorize a backlog of ~250 videos, analyze performance by category, and derive actionable insights to inform future content strategy.
+
+### ✨ My Role & Key Achievements
+
+As the sole data consultant and developer on this project, my contributions included:
+
+1.  **Data Consulting & Category System Design:**
+    * Analyzed the entire video library to propose and define 4 new core content categories (e.g., 'Google Trends & News').
+    * Solved complex keyword matching issues (e.g., plurals, compound words) by implementing a `regex`-based word-boundary matching logic, significantly improving classification accuracy.
+
+2.  **Data Processing & Automation Scripting:**
+    * Developed a Python script using `pandas` to clean the raw data and automatically tag every video according to the newly designed category system.
+
+3.  **Interactive BI Dashboard Development:**
+    * Built a 2-page interactive dashboard in `Looker Studio` with dynamic filters for date ranges and categories, allowing the client to easily explore their data.
+
+4.  **Client Communication & Final Delivery:**
+    * Maintained continuous communication to identify and address the client's underlying needs.
+    * Packaged and delivered a comprehensive solution including the cleaned Google Sheets, the Looker Studio dashboard, and a summary of the keyword system.
 
 ---
 
@@ -28,4 +45,15 @@ The data processed by this script is used to power an interactive dashboard in L
 -   **Language**: `Python`
 -   **Data Manipulation**: `pandas`, `NumPy`
 -   **Cloud Integration**: `gspread`, `google-auth`
+-   **BI Tool**: `Looker Studio`
 -   **Environment**: `Google Colab`
+
+---
+
+### 🚀 How to Run
+
+1.  **Prerequisites**: Ensure you have a Google Cloud Platform project set up with the necessary API permissions (Google Drive API, Google Sheets API).
+2.  **Environment**: Open the `.ipynb` file in Google Colab.
+3.  **Authentication**: Run the authentication cell to grant access to your Google account.
+4.  **Execute**: Run all cells in the notebook.
+5.  **Output**: A link to the newly created Google Sheet will be printed in the output.
